@@ -338,6 +338,16 @@ typedef enum {
 #define ID_PIN_P46       (DEVICE_ID_IO_P0 + 46)
 #define ID_PIN_P47       (DEVICE_ID_IO_P0 + 47)
 
+//Calliope mini3 
+#define ID_PIN_RGB       (DEVICE_ID_IO_P0 + 51) //RGB LED
+#define ID_PIN_MAIN1     (DEVICE_ID_IO_P0 + 52) //Motor 1 +  
+#define ID_PIN_MAIN2     (DEVICE_ID_IO_P0 + 53) //Motor 1 -  
+#define ID_PIN_MBIN1     (DEVICE_ID_IO_P0 + 54) //Motor 2 +  
+#define ID_PIN_MBIN2     (DEVICE_ID_IO_P0 + 55) //Motor 2 -
+#define ID_PIN_MEN       (DEVICE_ID_IO_P0 + 56) //Motor EN 
+#define ID_PIN_PAD3      (DEVICE_ID_IO_P0 + 57) //Pad 3
+#define ID_PIN_GROVE1_A0 (DEVICE_ID_IO_P0 + 58) //Grove
+
 // For MakeCode extension compat. Delete ASAP.
 #define ID_PIN_FACE      (ID_PIN_LOGO)
 
@@ -386,6 +396,16 @@ namespace codal
             NRF52Pin          P16;          // P1_02
             NRF52Pin          P19;          // P0_26
             NRF52Pin          P20;          // P1_00
+
+            //Calliope mini3 Pins
+            NRF52Pin          RGBPin;       //RGBLED
+            NRF52Pin          MAIN1;        //Motor 1 +
+            NRF52Pin          MAIN2;        //Motor 1 -
+            NRF52Pin          MBIN1;        //Motor 2 +
+            NRF52Pin          MBIN2;        //Motor 2 -
+            NRF52Pin          MEN;          //Motor Enable
+            NRF52Pin          PAD3;         //Pad 3
+            NRF52Pin          GA0;          //Grove1 A0 -> C16 zukünftig
 
             // Other exposed pins
             NRF52Pin          logo;         // P1_04
