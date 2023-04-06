@@ -398,7 +398,7 @@ namespace codal
             NRF52Pin          P20;          // P1_00
 
             //Calliope mini3 Pins
-            NRF52Pin          RGBPin;       //RGBLED
+            NRF52Pin          RGB;          //RGBLED
             NRF52Pin          MAIN1;        //Motor 1 +
             NRF52Pin          MAIN2;        //Motor 1 -
             NRF52Pin          MBIN1;        //Motor 2 +
