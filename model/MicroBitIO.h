@@ -240,6 +240,9 @@ typedef enum {
 #define MICROBIT_PIN_P19                            P0_26
 #define MICROBIT_PIN_P20                            P1_00
 
+//Calliope Internals
+#define MICROBIT_PIN_RGB                            P1_01 // Calliope RGB
+
 // User Input
 #define MICROBIT_PIN_BUTTON_A                       P0_14
 #define MICROBIT_PIN_BUTTON_B                       P0_23
