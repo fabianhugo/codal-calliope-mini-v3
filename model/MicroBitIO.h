@@ -242,6 +242,13 @@ typedef enum {
 
 //Calliope Internals
 #define MICROBIT_PIN_RGB                            P1_01 // Calliope RGB
+#define MICROBIT_PIN_M_AIN1                         P0_27 // Motor A IN1
+#define MICROBIT_PIN_M_AIN2                         P0_07 // Motor A IN2
+#define MICROBIT_PIN_M_BIN1                         P1_07 // Motor B IN1 
+#define MICROBIT_PIN_M_BIN2                         P1_09 // Motor B IN2 
+#define MICROBIT_PIN_M_EN                           P0_27 // Motor Enable
+#define MICROBIT_PIN_PAD3                           P0_29 // PAD3
+#define MICROBIT_PIN_GA0                            P1_03 // Grove 1.A0
 
 // User Input
 #define MICROBIT_PIN_BUTTON_A                       P0_14
@@ -343,13 +350,13 @@ typedef enum {
 
 //Calliope mini3 
 #define ID_PIN_RGB       (DEVICE_ID_IO_P0 + 51) //RGB LED
-#define ID_PIN_MAIN1     (DEVICE_ID_IO_P0 + 52) //Motor 1 +  
-#define ID_PIN_MAIN2     (DEVICE_ID_IO_P0 + 53) //Motor 1 -  
-#define ID_PIN_MBIN1     (DEVICE_ID_IO_P0 + 54) //Motor 2 +  
-#define ID_PIN_MBIN2     (DEVICE_ID_IO_P0 + 55) //Motor 2 -
-#define ID_PIN_MEN       (DEVICE_ID_IO_P0 + 56) //Motor EN 
+#define ID_PIN_M_AIN1    (DEVICE_ID_IO_P0 + 52) //Motor 1 +  
+#define ID_PIN_M_AIN2    (DEVICE_ID_IO_P0 + 53) //Motor 1 -  
+#define ID_PIN_M_BIN1    (DEVICE_ID_IO_P0 + 54) //Motor 2 +  
+#define ID_PIN_M_BIN2    (DEVICE_ID_IO_P0 + 55) //Motor 2 -
+#define ID_PIN_M_EN      (DEVICE_ID_IO_P0 + 56) //Motor EN 
 #define ID_PIN_PAD3      (DEVICE_ID_IO_P0 + 57) //Pad 3
-#define ID_PIN_GROVE1_A0 (DEVICE_ID_IO_P0 + 58) //Grove
+#define ID_PIN_GA0       (DEVICE_ID_IO_P0 + 58) //Grove
 
 // For MakeCode extension compat. Delete ASAP.
 #define ID_PIN_FACE      (ID_PIN_LOGO)
@@ -402,11 +409,11 @@ namespace codal
 
             //Calliope mini3 Pins
             NRF52Pin          RGB;          //RGBLED
-            NRF52Pin          MAIN1;        //Motor 1 +
-            NRF52Pin          MAIN2;        //Motor 1 -
-            NRF52Pin          MBIN1;        //Motor 2 +
-            NRF52Pin          MBIN2;        //Motor 2 -
-            NRF52Pin          MEN;          //Motor Enable
+            NRF52Pin          M_AIN1;       //Motor 1 +
+            NRF52Pin          M_AIN2;       //Motor 1 -
+            NRF52Pin          M_BIN1;       //Motor 2 +
+            NRF52Pin          M_BIN2;       //Motor 2 -
+            NRF52Pin          M_EN;         //Motor Enable
             NRF52Pin          PAD3;         //Pad 3
             NRF52Pin          GA0;          //Grove1 A0 -> C16 zukünftig
 

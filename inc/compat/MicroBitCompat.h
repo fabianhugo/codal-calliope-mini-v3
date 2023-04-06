@@ -348,10 +348,19 @@ const uint16_t MICROBIT_ID_MBED_TICKER       __attribute__ ((deprecated)) = 83;
 #define MICROBIT_ID_IO_P14                                      ID_PIN_P14
 #define MICROBIT_ID_IO_P15                                      ID_PIN_P15
 #define MICROBIT_ID_IO_P16                                      ID_PIN_P16
-#define MICROBIT_ID_RGB                                         ID_PIN_RGB         // RGB = MICROBIT_ID_RGB, //Calliope
 #define MICROBIT_ID_IO_P19                                      ID_PIN_P19
 #define MICROBIT_ID_IO_P20                                      ID_PIN_P20
 #define MICROBIT_ID_LOGO                                        ID_PIN_LOGO
+
+//Calliope miniV3
+#define MICROBIT_ID_RGB                                         ID_PIN_RGB
+#define ID_PIN_M_AIN1                                           ID_PIN_M_AIN1
+#define ID_PIN_M_AIN2                                           ID_PIN_M_AIN2
+#define ID_PIN_M_BIN1                                           ID_PIN_M_BIN1
+#define ID_PIN_M_BIN2                                           ID_PIN_M_BIN2
+#define ID_PIN_M_EN                                             ID_PIN_M_EN
+#define ID_PIN_PAD3                                             ID_PIN_PAD3
+#define ID_PIN_GA0                                              ID_PIN_GA0
 
 // For MakeCode extension compat. Delete ASAP.
 #define MICROBIT_ID_FACE                                        ID_PIN_FACE
