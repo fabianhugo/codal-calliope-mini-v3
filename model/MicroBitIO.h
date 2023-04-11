@@ -240,6 +240,16 @@ typedef enum {
 #define MICROBIT_PIN_P19                            P0_26
 #define MICROBIT_PIN_P20                            P1_00
 
+// Calliope mini3
+#define MICROBIT_PIN_RGB                            P1_01 // RGB
+#define MICROBIT_PIN_M_AIN1                         P0_27 // Motor A IN1
+#define MICROBIT_PIN_M_AIN2                         P0_07 // Motor A IN2
+#define MICROBIT_PIN_M_BIN1                         P1_07 // Motor B IN1 
+#define MICROBIT_PIN_M_BIN2                         P1_09 // Motor B IN2 
+#define MICROBIT_PIN_M_EN                           P0_27 // Motor Enable
+#define MICROBIT_PIN_PAD3                           P0_29 // PAD3
+#define MICROBIT_PIN_GA0                            P1_03 // Grove 1.A0
+
 // User Input
 #define MICROBIT_PIN_BUTTON_A                       P0_14
 #define MICROBIT_PIN_BUTTON_B                       P0_23
@@ -338,6 +348,17 @@ typedef enum {
 #define ID_PIN_P46       (DEVICE_ID_IO_P0 + 46)
 #define ID_PIN_P47       (DEVICE_ID_IO_P0 + 47)
 
+//Calliope mini3 
+#define ID_PIN_RGB       (DEVICE_ID_IO_P0 + 51) // RGB
+#define ID_PIN_M_AIN1    (DEVICE_ID_IO_P0 + 52) // Motor A IN1
+#define ID_PIN_M_AIN2    (DEVICE_ID_IO_P0 + 53) // Motor A IN2
+#define ID_PIN_M_BIN1    (DEVICE_ID_IO_P0 + 54) // Motor B IN1
+#define ID_PIN_M_BIN2    (DEVICE_ID_IO_P0 + 55) // Motor B IN2
+#define ID_PIN_M_EN      (DEVICE_ID_IO_P0 + 56) // Motor EN 
+#define ID_PIN_PAD3      (DEVICE_ID_IO_P0 + 57) // Pad 3
+#define ID_PIN_GA0       (DEVICE_ID_IO_P0 + 58) // Grove 1.A0
+
+
 // For MakeCode extension compat. Delete ASAP.
 #define ID_PIN_FACE      (ID_PIN_LOGO)
 
@@ -386,6 +407,16 @@ namespace codal
             NRF52Pin          P16;          // P1_02
             NRF52Pin          P19;          // P0_26
             NRF52Pin          P20;          // P1_00
+            
+            //Calliope mini3
+            NRF52Pin          RGB;          // RGBLED
+            NRF52Pin          M_AIN1;       // Motor A IN1
+            NRF52Pin          M_AIN2;       // Motor A IN2
+            NRF52Pin          M_BIN1;       // Motor B IN1
+            NRF52Pin          M_BIN2;       // Motor B IN2
+            NRF52Pin          M_EN;         // Motor EN
+            NRF52Pin          PAD3;         // Pad 3
+            NRF52Pin          GA0;          // Grove
 
             // Other exposed pins
             NRF52Pin          logo;         // P1_04
