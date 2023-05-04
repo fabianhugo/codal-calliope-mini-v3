@@ -250,8 +250,8 @@ typedef enum {
 #define MICROBIT_PIN_M_BIN1                         P1_07 // Motor B IN1
 #define MICROBIT_PIN_M_BIN2                         P1_09 // Motor B IN2
 #define MICROBIT_PIN_M_MODE                         P1_06 // Motor Mode
-#define ID_PIN_M_PAD3                               P1_03 // PAD 3
-#define ID_PIN_M_GA0                                P0_29 // Grove Analog
+#define ID_PIN_PAD3                                 P1_03 // PAD 3
+#define ID_PIN_GA0                                  P0_29 // Grove Analog
 
 // User Input
 #define MICROBIT_PIN_BUTTON_A                       P0_14
@@ -358,8 +358,8 @@ typedef enum {
 #define ID_PIN_M_BIN1    (DEVICE_ID_IO_P0 + 54) // Motor B IN1
 #define ID_PIN_M_BIN2    (DEVICE_ID_IO_P0 + 55) // Motor B IN2
 #define ID_PIN_M_MODE    (DEVICE_ID_IO_P0 + 56) // Motor Mode
-#define ID_PIN_M_PAD3    (DEVICE_ID_IO_P0 + 57) // PAD3
-#define ID_PIN_M_GA0     (DEVICE_ID_IO_P0 + 58) // Grove Analog
+#define ID_PIN_PAD3      (DEVICE_ID_IO_P0 + 57) // PAD3
+#define ID_PIN_GA0       (DEVICE_ID_IO_P0 + 58) // Grove Analog
 
 
 
