@@ -353,14 +353,14 @@ const uint16_t MICROBIT_ID_MBED_TICKER       __attribute__ ((deprecated)) = 83;
 #define MICROBIT_ID_LOGO                                        ID_PIN_LOGO
 
 // Calliope mini3
-#define MICROBIT_ID_IO_RGB                                      ID_PIN_RGB  // RGBLED       P0_07
-#define MICROBIT_ID_IO_M_AIN1                                   ID_PIN_M_AIN1  // Motor A IN1  P1_01 
-#define MICROBIT_ID_IO_M_AIN2                                   ID_PIN_M_AIN2  // Motor A IN2  P0_27
-#define MICROBIT_ID_IO_M_BIN1                                   ID_PIN_M_BIN1  // Motor B IN1  P1_07
-#define MICROBIT_ID_IO_M_BIN2                                   ID_PIN_M_BIN2  // Motor B IN2  P1_09
-#define MICROBIT_ID_IO_M_MODE                                   ID_PIN_M_MODE  // Motor Mode   P1_06
-#define MICROBIT_ID_IO_P17                                      ID_PIN_P17  // Place holder for micro:bit pin P16 (P1_02)
-#define MICROBIT_ID_IO_P18                                      ID_PIN_P18  // Place holder for micro:bit pin P20 I2C (1_00)
+#define MICROBIT_ID_IO_RGB                                      ID_PIN_RGB
+#define MICROBIT_ID_IO_M_AIN1                                   ID_PIN_M_AIN1
+#define MICROBIT_ID_IO_M_AIN2                                   ID_PIN_M_AIN2
+#define MICROBIT_ID_IO_M_BIN1                                   ID_PIN_M_BIN1
+#define MICROBIT_ID_IO_M_BIN2                                   ID_PIN_M_BIN2
+#define MICROBIT_ID_IO_M_MODE                                   ID_PIN_M_MODE
+#define MICROBIT_ID_IO_PAD3                                     ID_PIN_PAD3
+#define MICROBIT_ID_IO_GA0                                      ID_PIN_GA0
 
 // For MakeCode extension compat. Delete ASAP.
 #define MICROBIT_ID_FACE                                        ID_PIN_FACE
