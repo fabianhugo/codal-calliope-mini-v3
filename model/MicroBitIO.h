@@ -223,8 +223,8 @@ typedef enum {
 #define MICROBIT_PIN_P0                             P0_02
 #define MICROBIT_PIN_P1                             P0_03
 #define MICROBIT_PIN_P2                             P0_04
-#define MICROBIT_PIN_P3                             P0_31
-// #define MICROBIT_PIN_P3                             P1_03 //[Calliope] connect PAD3 P1_03 : DELETE
+/// #define MICROBIT_PIN_P3                             P0_31
+#define MICROBIT_PIN_P3                             P1_03 //[Calliope] connect PAD3 P1_03 : DELETE
 #define MICROBIT_PIN_P4                             P0_28
 #define MICROBIT_PIN_P5                             P0_14
 #define MICROBIT_PIN_P6                             P1_05
@@ -237,11 +237,13 @@ typedef enum {
 #define MICROBIT_PIN_P13                            P0_17
 #define MICROBIT_PIN_P14                            P0_01
 #define MICROBIT_PIN_P15                            P0_13
-#define MICROBIT_PIN_P16                            P1_02
-// #define MICROBIT_PIN_P16                            P0_29 //[Calliope] connect Grove Analog PIN (P0_29) : DELETE
-#define MICROBIT_PIN_P19                            P0_26
-#define MICROBIT_PIN_P20                            P1_00
-// #define MICROBIT_PIN_P20                            P0_31 //[Calliope] Place holder for micro:bit pin P3 (P0_31) : DELETE
+/// #define MICROBIT_PIN_P16                            P1_02
+#define MICROBIT_PIN_P16                            P0_29 //[Calliope] connect Grove Analog PIN (P0_29) : DELETE
+#define MICROBIT_PIN_P17                            P1_02 //[Calliope]
+#define MICROBIT_PIN_P18                            P0_31 //[Calliope]
+#define MICROBIT_PIN_P19                            P1_00
+/// #define MICROBIT_PIN_P20                            P1_00
+#define MICROBIT_PIN_P20                            P0_31 //[Calliope] Place holder for micro:bit pin P3 (P0_31) : DELETE
 
 // Calliope mini3
 #define MICROBIT_PIN_RGB                            P0_07 // RGB
@@ -409,6 +411,7 @@ namespace codal
             NRF52Pin          P14;          // P0_01
             NRF52Pin          P15;          // P0_13
             NRF52Pin          P16;          // P1_02 //[Calliope] connect Grove Analog PIN (P0_29) : DELETE COMMENT
+            NRF52Pin          P17;          // //[Calliope] P1_02
             NRF52Pin          P19;          // P0_26
             NRF52Pin          P20;          // P1_00 //[Calliope] Place holder for micro:bit pin P3 (P0_31) : DELETE COMMENT
             
