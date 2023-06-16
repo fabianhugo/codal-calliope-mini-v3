@@ -247,8 +247,8 @@ typedef enum {
 
 // Calliope mini3
 #define MICROBIT_PIN_RGB                            P0_07 // RGB
-#define MICROBIT_PIN_M_AIN1                         P1_01 // Motor A IN1
-#define MICROBIT_PIN_M_AIN2                         P0_27 // Motor A IN2
+#define MICROBIT_PIN_M_A_IN1                         P1_01 // Motor A IN1
+#define MICROBIT_PIN_M_A_IN2                         P0_27 // Motor A IN2
 #define MICROBIT_PIN_M_BIN1                         P1_07 // Motor B IN1
 #define MICROBIT_PIN_M_BIN2                         P1_09 // Motor B IN2
 #define MICROBIT_PIN_M_MODE                         P1_06 // Motor Mode
@@ -355,8 +355,8 @@ typedef enum {
 
 //Calliope mini3
 #define ID_PIN_RGB       (DEVICE_ID_IO_P0 + 51) // RGB
-#define ID_PIN_M_AIN1    (DEVICE_ID_IO_P0 + 52) // Motor A IN1
-#define ID_PIN_M_AIN2    (DEVICE_ID_IO_P0 + 53) // Motor A IN2
+#define ID_PIN_M_A_IN1    (DEVICE_ID_IO_P0 + 52) // Motor A IN1
+#define ID_PIN_M_A_IN2    (DEVICE_ID_IO_P0 + 53) // Motor A IN2
 #define ID_PIN_M_BIN1    (DEVICE_ID_IO_P0 + 54) // Motor B IN1
 #define ID_PIN_M_BIN2    (DEVICE_ID_IO_P0 + 55) // Motor B IN2
 #define ID_PIN_M_MODE    (DEVICE_ID_IO_P0 + 56) // Motor Mode
@@ -410,19 +410,20 @@ namespace codal
             NRF52Pin          P13;          // P0_17
             NRF52Pin          P14;          // P0_01
             NRF52Pin          P15;          // P0_13
+            // NRF52Pin          P18;          // P1_00
             ///NRF52Pin          P16;          // P1_02 //[Calliope] connect Grove Analog PIN (P0_29) : DELETE COMMENT
-            NRF52Pin          A0RX;
+            NRF52Pin          A1RX;
             ///NRF52Pin          P17;          // //[Calliope] P1_02
-            NRF52Pin          A0TX;
+            NRF52Pin          A1TX;
             ///NRF52Pin          P19;          // P0_26
-            NRF52Pin          A1SCL;
+            NRF52Pin          A0SCL;
             ///NRF52Pin          P20;          // P1_00 //[Calliope] Place holder for micro:bit pin P3 (P0_31) : DELETE COMMENT
-            NRF52Pin          A1SDA;
+            NRF52Pin          A0SDA;
             
             //Calliope mini3
             NRF52Pin          RGB;          // RGBLED       P0_07
-            NRF52Pin          M_AIN1;       // Motor A IN1  P1_01
-            NRF52Pin          M_AIN2;       // Motor A IN2  P0_27
+            NRF52Pin          M_A_IN1;       // Motor A IN1  P1_01
+            NRF52Pin          M_A_IN2;       // Motor A IN2  P0_27
             NRF52Pin          M_BIN1;       // Motor B IN1  P1_07
             NRF52Pin          M_BIN2;       // Motor B IN2  P1_09
             NRF52Pin          M_MODE;       // Motor Mode   P1_06

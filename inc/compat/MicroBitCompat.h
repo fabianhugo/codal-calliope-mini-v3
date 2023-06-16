@@ -357,8 +357,8 @@ const uint16_t MICROBIT_ID_MBED_TICKER       __attribute__ ((deprecated)) = 83;
 
 // Calliope mini3
 #define MICROBIT_ID_IO_RGB                                      ID_PIN_RGB
-#define MICROBIT_ID_IO_M_AIN1                                   ID_PIN_M_AIN1
-#define MICROBIT_ID_IO_M_AIN2                                   ID_PIN_M_AIN2
+#define MICROBIT_ID_IO_M_A_IN1                                   ID_PIN_M_A_IN1
+#define MICROBIT_ID_IO_M_A_IN2                                   ID_PIN_M_A_IN2
 #define MICROBIT_ID_IO_M_BIN1                                   ID_PIN_M_BIN1
 #define MICROBIT_ID_IO_M_BIN2                                   ID_PIN_M_BIN2
 #define MICROBIT_ID_IO_M_MODE                                   ID_PIN_M_MODE
