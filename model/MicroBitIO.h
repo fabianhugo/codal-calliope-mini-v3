@@ -249,8 +249,8 @@ typedef enum {
 #define MICROBIT_PIN_RGB                            P0_07 // RGB
 #define MICROBIT_PIN_M_A_IN1                         P1_01 // Motor A IN1
 #define MICROBIT_PIN_M_A_IN2                         P0_27 // Motor A IN2
-#define MICROBIT_PIN_M_BIN1                         P1_07 // Motor B IN1
-#define MICROBIT_PIN_M_BIN2                         P1_09 // Motor B IN2
+#define MICROBIT_PIN_M_B_IN1                         P1_07 // Motor B IN1
+#define MICROBIT_PIN_M_B_IN2                         P1_09 // Motor B IN2
 #define MICROBIT_PIN_M_MODE                         P1_06 // Motor Mode
 //#define MICROBIT_PIN_PAD3                           P1_03 // PAD 3
 //#define MICROBIT_PIN_GA0                            P0_29 // Grove Analog
@@ -357,8 +357,8 @@ typedef enum {
 #define ID_PIN_RGB       (DEVICE_ID_IO_P0 + 51) // RGB
 #define ID_PIN_M_A_IN1    (DEVICE_ID_IO_P0 + 52) // Motor A IN1
 #define ID_PIN_M_A_IN2    (DEVICE_ID_IO_P0 + 53) // Motor A IN2
-#define ID_PIN_M_BIN1    (DEVICE_ID_IO_P0 + 54) // Motor B IN1
-#define ID_PIN_M_BIN2    (DEVICE_ID_IO_P0 + 55) // Motor B IN2
+#define ID_PIN_M_B_IN1    (DEVICE_ID_IO_P0 + 54) // Motor B IN1
+#define ID_PIN_M_B_IN2    (DEVICE_ID_IO_P0 + 55) // Motor B IN2
 #define ID_PIN_M_MODE    (DEVICE_ID_IO_P0 + 56) // Motor Mode
 //#define ID_PIN_PAD3      (DEVICE_ID_IO_P0 + 57) // PAD3
 //#define ID_PIN_GA0       (DEVICE_ID_IO_P0 + 58) // Grove Analog
@@ -424,8 +424,8 @@ namespace codal
             NRF52Pin          RGB;          // RGBLED       P0_07
             NRF52Pin          M_A_IN1;       // Motor A IN1  P1_01
             NRF52Pin          M_A_IN2;       // Motor A IN2  P0_27
-            NRF52Pin          M_BIN1;       // Motor B IN1  P1_07
-            NRF52Pin          M_BIN2;       // Motor B IN2  P1_09
+            NRF52Pin          M_B_IN1;       // Motor B IN1  P1_07
+            NRF52Pin          M_B_IN2;       // Motor B IN2  P1_09
             NRF52Pin          M_MODE;       // Motor Mode   P1_06
             //NRF52Pin          PAD3;         // PAD 3        P1_03
             //NRF52Pin          GA0;          // Grove Analog P0_29
