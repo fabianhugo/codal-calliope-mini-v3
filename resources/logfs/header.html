@@ -44,7 +44,7 @@
       w.dl = {
         download: function () {
           let a = tag("a");
-          a.download = "microbit.csv";
+          a.download = "calliope.csv";
           a.href = URL.createObjectURL(new Blob([csv], { type: "text/plain" }));
           a.click();
           a.remove();
@@ -54,11 +54,11 @@
         },
         update: alert.bind(
           n,
-          "Unplug your micro:bit, then plug it back in and wait"
+          "Unplug your Calliope mini, then plug it back in and wait"
         ),
         clear: alert.bind(
           n,
-          "The log is cleared when you reflash your micro:bit"
+          "The log is cleared when you reflash your Calliope mini"
         ),
         load: function () {
           // Find the CSV text in the file system
@@ -130,11 +130,11 @@
       };
     </script>
     <script src="https://go.calliope.cc/assets/dl/3/dl.js"></script>
-    <title>micro:bit data log</title>
+    <title>Calliope mini data log</title>
   </head>
   <body onload="dl.load()">
     <div id="w">
-      <h1>micro:bit data log</h1>
+      <h1>Calliope mini data log</h1>
       <div class="bb">
         <button onclick="dl.download()">Download</button>
         <button onclick="dl.copy()">Copy</button>

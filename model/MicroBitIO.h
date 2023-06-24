@@ -240,10 +240,10 @@ typedef enum {
 /// #define MICROBIT_PIN_P16                            P1_02
 #define MICROBIT_PIN_P16                            P0_29 //[Calliope] connect Grove Analog PIN (P0_29) : DELETE
 #define MICROBIT_PIN_P17                            P1_02 //[Calliope]
-// #define MICROBIT_PIN_P18                            P0_31 //[Calliope]
-#define MICROBIT_PIN_P19                            P1_00
+#define MICROBIT_PIN_P18                            P0_31 //[Calliope]
+#define MICROBIT_PIN_P19                            P0_26
 /// #define MICROBIT_PIN_P20                            P1_00
-#define MICROBIT_PIN_P20                            P0_31 //[Calliope] Place holder for micro:bit pin P3 (P0_31) : DELETE
+#define MICROBIT_PIN_P20                            P1_00 //[Calliope] Place holder for micro:bit pin P3 (P0_31) : DELETE
 
 // Calliope mini3
 #define MICROBIT_PIN_RGB                            P0_07 // RGB
@@ -397,7 +397,7 @@ namespace codal
             NRF52Pin          P0;           // P0_02
             NRF52Pin          P1;           // P0_03
             NRF52Pin          P2;           // P0_04
-            NRF52Pin          P3;           // P0_31 //[Calliope] connect PAD3 (P1_03) : DELETE COMMENT
+            NRF52Pin          P3;           // P1_03 //[Calliope] connect PAD3 (P1_03) : DELETE COMMENT
             NRF52Pin          P4;           // P0_28
             NRF52Pin          P5;           // P0_14
             NRF52Pin          P6;           // P1_05
@@ -410,7 +410,7 @@ namespace codal
             NRF52Pin          P13;          // P0_17
             NRF52Pin          P14;          // P0_01
             NRF52Pin          P15;          // P0_13
-            // NRF52Pin          P18;          // P1_00
+            NRF52Pin          P18;          // P0_31
             ///NRF52Pin          P16;          // P1_02 //[Calliope] connect Grove Analog PIN (P0_29) : DELETE COMMENT
             NRF52Pin          A1RX;
             ///NRF52Pin          P17;          // //[Calliope] P1_02

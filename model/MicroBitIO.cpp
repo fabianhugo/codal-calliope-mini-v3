@@ -51,7 +51,7 @@ MicroBitIO::MicroBitIO(NRF52ADC &a, TouchSensor &s) :
     P3(ID_PIN_P3, P1_03, PIN_CAPABILITY_AD), //[Calliope] connect PAD3 (P1_03) : DELETE
     P4(ID_PIN_P4, P0_28, PIN_CAPABILITY_AD),
     P5(ID_PIN_P5, P0_14, PIN_CAPABILITY_AD),
-    P6(ID_PIN_P6, P1_5, PIN_CAPABILITY_AD),
+    P6(ID_PIN_P6, P1_05, PIN_CAPABILITY_AD),
     P7(ID_PIN_P7, P0_11, PIN_CAPABILITY_AD),
     P8(ID_PIN_P8, P0_10, PIN_CAPABILITY_AD),
     P9(ID_PIN_P9, P0_09, PIN_CAPABILITY_AD),
@@ -65,7 +65,7 @@ MicroBitIO::MicroBitIO(NRF52ADC &a, TouchSensor &s) :
     A1RX(ID_PIN_P16, P0_29, PIN_CAPABILITY_AD), //[Calliope] connect Grove Analog PIN (P0_29)  : DELETE
     /// P17(ID_PIN_P17, P1_02, PIN_CAPABILITY_AD), //[Calliope] P17
     A1TX(ID_PIN_P17, P1_02, PIN_CAPABILITY_AD), //[Calliope] P17
-    // P18(ID_PIN_P18, P0_31, PIN_CAPABILITY_AD), //[Calliope] P18
+    P18(ID_PIN_P18, P0_31, PIN_CAPABILITY_AD), //[Calliope] P18
     /// P19(ID_PIN_P19, P0_26, PIN_CAPABILITY_AD),
     A0SCL(ID_PIN_P19, P0_26, PIN_CAPABILITY_AD),
     /// P20(ID_PIN_P20, P1_00, PIN_CAPABILITY_AD),
@@ -102,7 +102,7 @@ MicroBitIO::MicroBitIO(NRF52ADC &a, TouchSensor &s) :
     // Aliases
     col1(P4),
     col2(P7),
-    col3(A0SDA),
+    col3(P18),
     col4(P6),
     col5(P10),
     buttonA(P5),
