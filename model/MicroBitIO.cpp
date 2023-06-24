@@ -65,11 +65,11 @@ MicroBitIO::MicroBitIO(NRF52ADC &a, TouchSensor &s) :
     A1RX(ID_PIN_P16, P0_29, PIN_CAPABILITY_AD), //[Calliope] connect Grove Analog PIN (P0_29)  : DELETE
     /// P17(ID_PIN_P17, P1_02, PIN_CAPABILITY_AD), //[Calliope] P17
     A1TX(ID_PIN_P17, P1_02, PIN_CAPABILITY_AD), //[Calliope] P17
-    // P18(ID_PIN_P18, P1_00, PIN_CAPABILITY_AD), //[Calliope] P18
+    // P18(ID_PIN_P18, P0_31, PIN_CAPABILITY_AD), //[Calliope] P18
     /// P19(ID_PIN_P19, P0_26, PIN_CAPABILITY_AD),
     A0SCL(ID_PIN_P19, P0_26, PIN_CAPABILITY_AD),
     /// P20(ID_PIN_P20, P1_00, PIN_CAPABILITY_AD),
-    A0SDA(ID_PIN_P20, P0_31, PIN_CAPABILITY_AD), //[Calliope] Place holder for micro:bit pin P3 (P0_31) : DELETE
+    A0SDA(ID_PIN_P20, P1_00, PIN_CAPABILITY_AD), //[Calliope] Place holder for micro:bit pin P3 (P0_31) : DELETE
 
     // Calliope mini3
     RGB(ID_PIN_RGB, P0_07, PIN_CAPABILITY_AD),// RGBLED       P0_07
