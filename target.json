@@ -57,8 +57,8 @@
     "libraries":[
         {
             "name":"codal-core",
-            "url":"https://github.com/lancaster-university/codal-core",
-            "branch":"master",
+            "url":"https://github.com/calliope-edu/codal-core.git",
+            "branch":"mini3_proto2",
             "type":"git"
         },
         {
