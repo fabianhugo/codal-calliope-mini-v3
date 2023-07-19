@@ -50,10 +50,10 @@
     "generate_hex": true,
     "libraries": [
         {
-            "branch": "bf65ebed2003049bd026e1f685bb756e189c9258",
+            "branch": "130f4d1520117028e3e86ea81b14f16a23714c20",
             "name": "codal-core",
             "type": "git",
-            "url": "https://github.com/lancaster-university/codal-core"
+            "url": "https://github.com/calliope-edu/codal-core"
         },
         {
             "branch": "84b1aeec870addcfb6027a924dbfe83f1f10c6db",
