@@ -57,7 +57,7 @@
     "libraries":[
         {
             "name":"codal-core",
-            "url":"https://github.com/calliope-edu/codal-core.git",
+            "url":"https://github.com/calliope-edu/codal-core",
             "branch":"mini3_proto2",
             "type":"git"
         },
