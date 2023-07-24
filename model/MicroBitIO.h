@@ -427,16 +427,6 @@ namespace codal
             NRF52Pin          M_MODE;       // Motor Mode   P1_06
             //NRF52Pin          PAD3;         // PAD 3        P1_03
             //NRF52Pin          GA0;          // Grove Analog P0_29
-            
-            //Calliope mini3
-            NRF52Pin          RGB;          // RGBLED       P0_07
-            NRF52Pin          M_AIN1;       // Motor A IN1  P1_01
-            NRF52Pin          M_AIN2;       // Motor A IN2  P0_27
-            NRF52Pin          M_BIN1;       // Motor B IN1  P1_07
-            NRF52Pin          M_BIN2;       // Motor B IN2  P1_09
-            NRF52Pin          M_MODE;       // Motor Mode   P1_06
-            NRF52Pin          PAD3;         // PAD 3        P1_03
-            NRF52Pin          GA0;          // Grove Analog P0_29
 
             // Other exposed pins
             NRF52Pin          logo;         // P1_04
