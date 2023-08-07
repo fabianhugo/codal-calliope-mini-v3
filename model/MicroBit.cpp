@@ -205,10 +205,8 @@ int MicroBit::init()
     messageBus.listen(DEVICE_ID_MESSAGE_BUS_LISTENER, DEVICE_EVT_ANY, this, &MicroBit::onListenerRegisteredEvent);
     messageBus.listen(DEVICE_ID_MESSAGE_BUS_LISTENER, ID_PIN_P0, this, &MicroBit::onP0ListenerRegisteredEvent, MESSAGE_BUS_LISTENER_IMMEDIATE);
 
-#if CONFIG_ENABLED(DMESG_SERIAL_DEBUG)
-#if DEVICE_DMESG_BUFFER_SIZE > 0
+#if CONFIG_ENABLED(DMESG_SERIAL_DEBUG) && DEVICE_DMESG_BUFFER_SIZE > 0
     codal_dmesg_set_flush_fn(microbit_dmesg_flush);
-#endif
 #endif
 
     status |= DEVICE_COMPONENT_STATUS_IDLE_TICK;
@@ -272,6 +270,11 @@ int MicroBit::init()
             // Start the BLE stack, if it isn't already running.
             bleManager.init( ManagedString( microbit_friendly_name()), getSerial(), messageBus, storage, true);
             
+
+#if CONFIG_ENABLED(MICROBIT_BLE_UTILITY_SERVICE_PAIRING)
+            MICROBIT_DEBUG_DMESG( "UTILITY_SERVICE");
+            MicroBitUtilityService::createShared( *ble, messageBus, storage, log);
+#endif
             // Enter pairing mode, using the LED matrix for any necessary pairing operations
             bleManager.pairingMode(display, buttonA);
         }
@@ -281,10 +284,14 @@ int MicroBit::init()
 #if CONFIG_ENABLED(DEVICE_BLE) && CONFIG_ENABLED(MICROBIT_BLE_ENABLED)
     // Start the BLE stack, if it isn't already running.
     bleManager.init( ManagedString( microbit_friendly_name()), getSerial(), messageBus, storage, false);
-#endif
+
+    // Nested this a bit deeper for clarity... JV
+    #if CONFIG_ENABLED(MICROBIT_BLE_UTILITY_SERVICE)
+        MICROBIT_DEBUG_DMESG( "UTILITY_SERVICE");
+        MicroBitUtilityService::createShared( *ble, messageBus, storage, log);
+    #endif
 
     // Bring up the 64MHz external oscillator.
-#if CONFIG_ENABLED(DEVICE_BLE) && CONFIG_ENABLED(MICROBIT_BLE_ENABLED)
     sd_clock_hfclk_request();
 #else
     NRF_CLOCK->EVENTS_HFCLKSTARTED = 0;

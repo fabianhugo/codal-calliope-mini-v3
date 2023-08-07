@@ -32,7 +32,6 @@ DEALINGS IN THE SOFTWARE.
 #include "SoundOutputPin.h"
 #include "StreamNormalizer.h"
 #include "StreamSplitter.h"
-#include "LevelDetector.h"
 #include "LevelDetectorSPL.h"
 #include "LowPassFilter.h"
 
@@ -64,6 +63,7 @@ namespace codal
         LowPassFilter           *micFilter;     // Low pass filter to remove high frequency noise on the mic
 
         private:
+        bool micEnabled;                        // State of on board mic
         bool speakerEnabled;                    // State of on board speaker
         bool pinEnabled;                        // State of on auxiliary output pin
         NRF52Pin *pin;                          // Auxiliary pin to route audio to
@@ -157,6 +157,14 @@ namespace codal
          * @return true if enabled, false otherwise.
          */
         bool isSpeakerEnabled();
+
+        /**
+         * Query weather the microphone is enabled
+         * 
+         * @return true If the mic pin is enabled
+         * @return false If the mic pin is disabled (The ADC may still be running)
+         */
+        bool isMicrophoneEnabled();
 
         /**
          * Query whether any audio is currently being played, from any source.
