@@ -178,6 +178,9 @@ int MicroBit::init()
         microbit_no_init_memory_region.resetClickCount++;
     }
 
+    // turn RGB LEDs off
+    neopixel_send_buffer(uBit.io.RGB, (uint8_t[]){0, 0, 0, 0, 0, 0, 0, 0, 0}, 9);
+
 #if CONFIG_ENABLED(DEVICE_BLE)
     // Ensure BLE bootloader settings are up to date.
     // n.b. this only performs a write operation if the settings stored in FLASH are out of date.
