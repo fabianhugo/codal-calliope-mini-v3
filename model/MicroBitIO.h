@@ -410,29 +410,16 @@ namespace codal
             NRF52Pin          P13;          // P0_17
             NRF52Pin          P14;          // P0_01
             NRF52Pin          P15;          // P0_13
-            NRF52Pin          P18;          // P0_31
             ///NRF52Pin          P16;          // P1_02 //[Calliope] connect Grove Analog PIN (P0_29) : DELETE COMMENT
             NRF52Pin          A1RX;
             ///NRF52Pin          P17;          // //[Calliope] P1_02
             NRF52Pin          A1TX;
+            NRF52Pin          P18;          // P0_31
             ///NRF52Pin          P19;          // P0_26
             NRF52Pin          A0SCL;
             ///NRF52Pin          P20;          // P1_00 //[Calliope] Place holder for micro:bit pin P3 (P0_31) : DELETE COMMENT
             NRF52Pin          A0SDA;
-            
-            //Calliope mini3
-            NRF52Pin          RGB;          // RGBLED       P0_07
-            NRF52Pin          M_A_IN1;       // Motor A IN1  P1_01
-            NRF52Pin          M_A_IN2;       // Motor A IN2  P0_27
-            NRF52Pin          M_B_IN1;       // Motor B IN1  P1_07
-            NRF52Pin          M_B_IN2;       // Motor B IN2  P1_09
-            NRF52Pin          M_MODE;       // Motor Mode   P1_06
-            //NRF52Pin          PAD3;         // PAD 3        P1_03
-            //NRF52Pin          GA0;          // Grove Analog P0_29
-            
-            
-            
-            
+  
 
             // Other exposed pins
             NRF52Pin          logo;         // P1_04
@@ -451,6 +438,16 @@ namespace codal
             NRF52Pin          usbTx;
             NRF52Pin          usbRx;
             NRF52Pin          irq1;         // P0_25
+
+            //Calliope mini3
+            NRF52Pin          RGB;          // RGBLED       P0_07
+            NRF52Pin          M_A_IN1;       // Motor A IN1  P1_01
+            NRF52Pin          M_A_IN2;       // Motor A IN2  P0_27
+            NRF52Pin          M_B_IN1;       // Motor B IN1  P1_07
+            NRF52Pin          M_B_IN2;       // Motor B IN2  P1_09
+            NRF52Pin          M_MODE;       // Motor Mode   P1_06
+            //NRF52Pin          PAD3;         // PAD 3        P1_03
+            //NRF52Pin          GA0;          // Grove Analog P0_29
 
             // Aliases
             NRF52Pin&         col1;
