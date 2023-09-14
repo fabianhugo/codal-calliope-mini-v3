@@ -179,7 +179,8 @@ int MicroBit::init()
     }
 
     // turn RGB LEDs off
-    neopixel_send_buffer(uBit.io.RGB, (uint8_t[]){0, 0, 0, 0, 0, 0, 0, 0, 0}, 9);
+    // neopixel_send_buffer(uBit.io.RGB, (uint8_t[]){0, 0, 0, 0, 0, 0, 0, 0, 0}, 9);
+    uBit.io.RGB.setDigitalValue(0);
 
 #if CONFIG_ENABLED(DEVICE_BLE)
     // Ensure BLE bootloader settings are up to date.
