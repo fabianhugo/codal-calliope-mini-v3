@@ -39,7 +39,7 @@
       let n = null;
       let csv = "";
       let tag = d.createElement.bind(d);
-      let x = "Calliope mini";
+      let x = " Calliope mini ";
       // Allow external JS to override these actions if we managed to load it.
       // This script block is first so external JS can override individual functions.
       w.dl = {
@@ -55,11 +55,11 @@
         },
         update: alert.bind(
           n,
-          `Unplug your ${x}, then plug it back in and wait`
+          `Verbinde den${x}neu und warte.`
         ),
         clear: alert.bind(
           n,
-          "The log is cleared when you reflash your "+x
+          `Log wird gelöscht, wenn du den${x}neu flashst.`
         ),
         load: () => {
           // Find the CSV text in the file system
@@ -99,7 +99,7 @@
               // We also plan to add a "Log 65% full" indicator here in online mode.
               let logEnd = parseInteger(raw.substr(18, 10), 16);
               if (raw.substr(logEnd - 2048 + 1, 3) === "FUL") {
-                p.a(tag("p")).innerText = "LOG FULL";
+                p.a(tag("p")).innerText = "LOG VOLL";
               }
 
               let table = p.a(tag("table"));
@@ -132,15 +132,15 @@
       };
     </script>
     <script src="https://go.calliope.cc/assets/dl/3/dl.js"></script>
-    <title>Calliope mini data log</title>
+    <title>Calliope mini Datalog</title>
   </head>
   <body onload="dl.load()">
     <div id="w">
-      <h1>Calliope mini data log</h1>
+      <h1>Calliope mini Datalog</h1>
       <div class="bb">
-        <button onclick="dl.download()">Download</button>
+        <button onclick="dl.download()">Herunterladen</button>
         <button onclick="dl.copy()">Kopieren</button>
-        <button onclick="dl.update()">Update&mldr;</button>
+        <button onclick="dl.update()">Aktualisieren&mldr;</button>
         <button onclick="dl.clear()">Log leeren&mldr;</button>
       </div>
       <p id="v">Offline: kein Internet</p>
