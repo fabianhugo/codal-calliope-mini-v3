@@ -4,10 +4,40 @@
 For official release notes, please see Releases.md
 
 The current tag uses the following library versions:
- - codal-core = https://github.com/lancaster-university/codal-core/tree/32cc87c3298a49663c3b3b7b1881ec7aeb3d73a5
- - codal-nrf52 = https://github.com/lancaster-university/codal-nrf52/tree/2dbf5aa214c7432c0b1b8a19e92a3f9a4fc4b9da
- - codal-microbit-nrf5sdk = https://github.com/microbit-foundation/codal-microbit-nrf5sdk/tree/ef4662e13875a7b03e7296d7ac24a2b4d231f323
+ - codal-core = https://github.com/lancaster-university/codal-core/tree/d7ea466ffe92856eaec941d309e0a45747feeaca
+ - codal-nrf52 = https://github.com/lancaster-university/codal-nrf52/tree/2d77a3c89d14c5f4344e73511ca32086a0fcc8ad
+ - codal-microbit-nrf5sdk = https://github.com/microbit-foundation/codal-microbit-nrf5sdk/tree/f98e1a9325acef9de52416b3e30cc820531b6699
 
+
+## [v0.2.61](https://github.com/lancaster-university/codal-microbit-v2/compare/v0.2.60...v0.2.61)
+
+Dr John Vidler (4):
+ - Added a hook to manually deactivate the microphone when we deep sleep
+ - Snapshot v0.2.60-master.0
+ - Snapshot v0.2.60-master.1
+ - Snapshot v0.2.61
+
+Github Actions (2):
+ - Updated the Changelog
+ - Updated the Changelog
+
+Martin Williams (1):
+ - Shorter reset to Bluetooth mode animation (#368)
+
+## [v0.2.60](https://github.com/lancaster-university/codal-microbit-v2/compare/v0.2.59...v0.2.60)
+
+Carlos Pereira Atencio (5):
+ - Fix issue when missing motion sensors crashed instead of panicking. (#360)
+ - Minor fix of seedRandom return value. (#369)
+ - Minor cleanup of config flags. (#363)
+ - radio: Reduce power level options to match V1 DAL. (#275)
+ - BLE: Simplify device name string creation. (#371)
+
+Dr John Vidler (1):
+ - Snapshot v0.2.60
+
+Github Actions (1):
+ - Updated the Changelog
 
 ## [v0.2.59](https://github.com/lancaster-university/codal-microbit-v2/compare/v0.2.58...v0.2.59)
 
