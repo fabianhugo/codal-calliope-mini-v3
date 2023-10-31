@@ -272,7 +272,7 @@ int MicroBit::init()
     // as a background task, and to allow the power mamanger tcd o repsonse to background events from the KL27
     // before any user code begins running.
     
-    ManagedBuffer b(3); // clear internal RGB leds after bootup
+    ManagedBuffer b(3*3); // clear internal RGB leds after bootup
     b.fill(0);
     neopixel_send_buffer(io.RGB, b);
     
