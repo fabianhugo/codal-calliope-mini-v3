@@ -68,19 +68,7 @@ void MicroBitDevice::seedRandom()
 {
     uint32_t r = 0xBBC5EED;
 
-    if(ble_running())
-    {
-        // Readings from different sensors
-        int16_t accelerometerX = uBit.accelerometer.getX();
-        int16_t accelerometerY = uBit.accelerometer.getY();
-        int16_t accelerometerZ = uBit.accelerometer.getZ();
-        int16_t temperatureValue = uBit.thermometer.getTemperature();
-        int16_t microphoneValue = uBit.io.MICROPHONE.getAnalogValue();
-
-        // Combine sensor values using XOR
-        r = accelerometerX ^ accelerometerY ^ accelerometerZ ^ temperatureValue ^ microphoneValue;
-    }
-    else
+    if(!ble_running())
     {
         // Start the Random number generator. No need to leave it running... I hope. :-)
         NRF_RNG->TASKS_START = 1;
