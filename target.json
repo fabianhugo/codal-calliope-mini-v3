@@ -58,7 +58,7 @@
         {
             "name":"codal-core",
             "url":"https://github.com/calliope-edu/codal-core",
-            "branch":"mini3_proto2",
+            "branch":"pxt-calliope",
             "type":"git"
         },
         {
