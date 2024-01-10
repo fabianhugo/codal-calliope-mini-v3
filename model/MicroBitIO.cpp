@@ -60,19 +60,19 @@ MicroBitIO::MicroBitIO(NRF52ADC &a, TouchSensor &s) :
     P13(ID_PIN_P13, P0_17, PIN_CAPABILITY_AD),
     P14(ID_PIN_P14, P0_01, PIN_CAPABILITY_AD),
     P15(ID_PIN_P15, P0_13, PIN_CAPABILITY_AD),
-    A1RX(ID_PIN_P16, P0_29, PIN_CAPABILITY_AD), //[Calliope] change to A1RX (Grove right)
-    A1TX(ID_PIN_P17, P1_02, PIN_CAPABILITY_AD), //[Calliope] change to A1TX (Grove right), equals uBit P16
+    P16(ID_PIN_P16, P0_29, PIN_CAPABILITY_AD), //[Calliope] add (Grove right)
+    P17(ID_PIN_P17, P1_02, PIN_CAPABILITY_AD), //[Calliope] change to P17(Grove right), equals uBit P16
     P18(ID_PIN_P18, P0_31, PIN_CAPABILITY_AD), //[Calliope] change, equals uBit P3
-    A0SCL(ID_PIN_P19, P0_26, PIN_CAPABILITY_AD), //[Calliope] change, equals uBit P19
-    A0SDA(ID_PIN_P20, P1_00, PIN_CAPABILITY_AD), //[Calliope] change, equals uBit P20
+    P19(ID_PIN_P19, P0_26, PIN_CAPABILITY_AD),
+    P20(ID_PIN_P20, P1_00, PIN_CAPABILITY_AD),
 
     // Calliope mini3
-    RGB(ID_PIN_RGB, P0_07, PIN_CAPABILITY_AD),// RGBLED       P0_07
-    M_A_IN1(ID_PIN_M_A_IN1, P1_01, PIN_CAPABILITY_AD),// Motor A IN1  P1_01
-    M_A_IN2(ID_PIN_M_A_IN2, P0_27, PIN_CAPABILITY_AD),// Motor A IN2  P0_27
-    M_B_IN1(ID_PIN_M_B_IN1, P1_07, PIN_CAPABILITY_AD),// Motor B IN1  P1_07
-    M_B_IN2(ID_PIN_M_B_IN2, P1_09, PIN_CAPABILITY_AD),// Motor B IN2  P1_09
-    M_MODE(ID_PIN_M_MODE, P1_06, PIN_CAPABILITY_AD),// Motor Mode   P1_06
+    RGB(ID_PIN_RGB, P0_07, PIN_CAPABILITY_AD),//[Calliope] RGBLED       P0_07
+    M_A_IN1(ID_PIN_M_A_IN1, P1_01, PIN_CAPABILITY_AD),//[Calliope] Motor A IN1  P1_01
+    M_A_IN2(ID_PIN_M_A_IN2, P0_27, PIN_CAPABILITY_AD),//[Calliope] Motor A IN2  P0_27
+    M_B_IN1(ID_PIN_M_B_IN1, P1_07, PIN_CAPABILITY_AD),//[Calliope] Motor B IN1  P1_07
+    M_B_IN2(ID_PIN_M_B_IN2, P1_09, PIN_CAPABILITY_AD),//[Calliope] Motor B IN2  P1_09
+    M_MODE(ID_PIN_M_MODE, P1_06, PIN_CAPABILITY_AD),//[Calliope] Motor Mode   P1_06
     
     // Other exposed pins
     logo(ID_PIN_LOGO, P1_04, PIN_CAPABILITY_AD),

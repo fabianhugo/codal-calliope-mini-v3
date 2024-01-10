@@ -410,15 +410,11 @@ namespace codal
             NRF52Pin          P13;          // P0_17
             NRF52Pin          P14;          // P0_01
             NRF52Pin          P15;          // P0_13
-            ///NRF52Pin          P16;          // P1_02 //[Calliope] connect Grove Analog PIN (P0_29) : DELETE COMMENT
-            NRF52Pin          A1RX;
-            ///NRF52Pin          P17;          // //[Calliope] P1_02
-            NRF52Pin          A1TX;
-            NRF52Pin          P18;          // P0_31
-            ///NRF52Pin          P19;          // P0_26
-            NRF52Pin          A0SCL;
-            ///NRF52Pin          P20;          // P1_00 //[Calliope] Place holder for micro:bit pin P3 (P0_31) : DELETE COMMENT
-            NRF52Pin          A0SDA;
+            NRF52Pin          P16;          // [Calliope] P0_29
+            NRF52Pin          P17;          // [Calliope] P1_02
+            NRF52Pin          P18;          // [Calliope] P0_31
+            NRF52Pin          P19;          // P0_26
+            NRF52Pin          P20;          // P1_00
   
 
             // Other exposed pins
