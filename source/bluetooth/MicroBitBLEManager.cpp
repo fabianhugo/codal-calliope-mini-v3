@@ -110,7 +110,7 @@ DEALINGS IN THE SOFTWARE.
 #endif
 
 const char *MICROBIT_BLE_MANUFACTURER = NULL;
-const char *MICROBIT_BLE_MODEL = "BBC micro:bit";
+const char *MICROBIT_BLE_MODEL = "Calliope mini";
 const char *MICROBIT_BLE_VERSION[2] = { "2.0", "2.X" };
 const char *MICROBIT_BLE_HARDWARE_VERSION = NULL;
 const char *MICROBIT_BLE_FIRMWARE_VERSION = MICROBIT_DAL_VERSION;

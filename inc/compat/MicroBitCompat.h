@@ -323,6 +323,7 @@ typedef codal::BitmapFont MicroBitFont;
 #define MICROBIT_ID_COMPASS                                     DEVICE_ID_COMPASS
 #define MICROBIT_ID_DISPLAY                                     DEVICE_ID_DISPLAY
 #define MICROBIT_ID_GESTURE                                     DEVICE_ID_GESTURE
+
 #define MICROBIT_ID_IO_P0                                       ID_PIN_P0
 #define MICROBIT_ID_IO_P1                                       ID_PIN_P1
 #define MICROBIT_ID_IO_P2                                       ID_PIN_P2
@@ -340,9 +341,19 @@ typedef codal::BitmapFont MicroBitFont;
 #define MICROBIT_ID_IO_P14                                      ID_PIN_P14
 #define MICROBIT_ID_IO_P15                                      ID_PIN_P15
 #define MICROBIT_ID_IO_P16                                      ID_PIN_P16
+#define MICROBIT_ID_IO_P17                                      ID_PIN_P17 //[Calliope] add
+#define MICROBIT_ID_IO_P18                                      ID_PIN_P18 //[Calliope] add
 #define MICROBIT_ID_IO_P19                                      ID_PIN_P19
 #define MICROBIT_ID_IO_P20                                      ID_PIN_P20
 #define MICROBIT_ID_LOGO                                        ID_PIN_LOGO
+
+// Calliope mini3
+#define MICROBIT_ID_IO_RGB                                      ID_PIN_RGB
+#define MICROBIT_ID_IO_M_A_IN1                                  ID_PIN_M_A_IN1
+#define MICROBIT_ID_IO_M_A_IN2                                  ID_PIN_M_A_IN2
+#define MICROBIT_ID_IO_M_B_IN1                                  ID_PIN_M_B_IN1
+#define MICROBIT_ID_IO_M_B_IN2                                  ID_PIN_M_B_IN2
+#define MICROBIT_ID_IO_M_MODE                                   ID_PIN_M_MODE
 
 // For MakeCode extension compat. Delete ASAP.
 #define MICROBIT_ID_FACE                                        ID_PIN_FACE
